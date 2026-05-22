@@ -11,7 +11,7 @@ export default function Header({ stats }: HeaderProps) {
     <header className="text-center mb-8">
       <div className="flex items-center justify-center gap-3 mb-2">
         <CheckCircle2 className="w-10 h-10 text-brand" />
-        <h1 className="text-4xl font-extrabold text-text-primary tracking-tight">Todo App</h1>
+        <h1 className="text-4xl font-extrabold text-text-primary tracking-tight">Todo apps</h1>
       </div>
       <p className="text-text-secondary text-sm mb-6">Stay organized, get things done.</p>
 
