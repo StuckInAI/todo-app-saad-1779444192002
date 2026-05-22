@@ -12,16 +12,16 @@ type TodoListProps = {
 export default function TodoList({ todos, onToggle, onDelete, onEdit }: TodoListProps) {
   if (todos.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-16 text-gray-500">
-        <ClipboardList className="w-16 h-16 mb-4 opacity-30" />
-        <p className="text-lg font-medium">No todos found</p>
+      <div className="flex flex-col items-center justify-center py-20 text-slate-400 bg-white border border-dashed border-slate-200 rounded-3xl shadow-sm">
+        <ClipboardList className="w-16 h-16 mb-4 opacity-20" />
+        <p className="text-lg font-bold text-text-secondary">No tasks found</p>
         <p className="text-sm mt-1">Add a new task to get started!</p>
       </div>
     );
   }
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-3">
       {todos.map((todo) => (
         <TodoItem
           key={todo.id}

@@ -31,20 +31,20 @@ export default function AddTodoForm({ onAdd }: AddTodoFormProps) {
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setText(e.target.value)}
           onFocus={() => setIsExpanded(true)}
           placeholder="What needs to be done?"
-          className="flex-1 bg-surface-light border border-surface-lighter rounded-xl px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-all"
+          className="flex-1 bg-white border border-slate-200 rounded-xl px-4 py-3 text-text-primary placeholder-slate-400 outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all shadow-sm"
         />
         <button
           type="submit"
           disabled={text.trim() === ''}
           className={cn(
-            'px-4 py-3 rounded-xl font-medium flex items-center gap-2 transition-all',
+            'px-4 py-3 rounded-xl font-bold flex items-center gap-2 transition-all shadow-sm',
             text.trim() !== ''
-              ? 'bg-brand hover:bg-brand-dark text-white shadow-lg shadow-brand/25'
-              : 'bg-surface-lighter text-gray-500 cursor-not-allowed'
+              ? 'bg-brand hover:bg-brand-dark text-white shadow-lg shadow-brand/20'
+              : 'bg-slate-200 text-slate-400 cursor-not-allowed'
           )}
         >
           <Plus className="w-5 h-5" />
-          <span className="hidden sm:inline">Add</span>
+          <span className="hidden sm:inline uppercase text-xs tracking-wide">Add Task</span>
         </button>
       </div>
 
@@ -58,10 +58,10 @@ export default function AddTodoForm({ onAdd }: AddTodoFormProps) {
                 type="button"
                 onClick={() => setCategory(cat)}
                 className={cn(
-                  'px-3 py-1.5 rounded-lg text-xs font-medium transition-all border',
+                  'px-3 py-1.5 rounded-lg text-xs font-bold transition-all border',
                   category === cat
                     ? `${config.bg} ${config.color} border-current`
-                    : 'bg-surface-light text-gray-400 border-transparent hover:border-surface-lighter'
+                    : 'bg-white text-text-muted border-slate-200 hover:border-brand/30 hover:text-brand'
                 )}
               >
                 {config.label}

@@ -6,8 +6,11 @@
   --color-brand-dark: #4f46e5;
   --color-danger: #ef4444;
   --color-danger-dark: #dc2626;
-  --color-success: #22c55e;
-  --color-surface: #1e1e2e;
-  --color-surface-light: #2a2a3e;
-  --color-surface-lighter: #363650;
+  --color-success: #10b981;
+  --color-surface: #ffffff;
+  --color-surface-light: #f8fafc;
+  --color-surface-lighter: #f1f5f9;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
 }

@@ -22,7 +22,7 @@ export default function HomePage() {
   } = useTodos();
 
   return (
-    <div className="min-h-screen bg-[#121220] text-white">
+    <div className="min-h-screen bg-slate-50 text-text-primary">
       <div className="max-w-xl mx-auto px-4 py-10">
         <Header stats={stats} />
         <AddTodoForm onAdd={addTodo} />
@@ -42,7 +42,7 @@ export default function HomePage() {
           onDelete={deleteTodo}
           onEdit={editTodo}
         />
-        <footer className="mt-10 text-center text-xs text-gray-600">
+        <footer className="mt-10 text-center text-xs text-text-muted">
           Data is stored in your browser's localStorage.
         </footer>
       </div>
